@@ -12,7 +12,7 @@
  */
 export const SITE_CONFIG = {
   /** Google Drive file ID for the ClipFlow VSL (e.g. "1AbCdEfGhIjKlMnOpQrStUv"). Leave "" to show the placeholder. */
-  vslGoogleDriveFileId: '',
+  vslGoogleDriveFileId: '1Zzc7Yi1gaH7d1TkZp6KmiqC4PYGwSoWg',
   /** Public Calendly scheduling link used in the booking section and CTAs. */
   calendlyUrl: 'https://calendly.com/meet101/vip',
 } as const

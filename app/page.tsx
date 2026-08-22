@@ -22,6 +22,7 @@ export default function Page() {
       <div className="relative z-10">
         <SiteHeader />
         <main>
+          <BrandIntro />
           <Hero />
           <VslVideo />
           <DistributionPitch />

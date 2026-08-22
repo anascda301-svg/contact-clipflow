@@ -15,7 +15,7 @@ import Image from 'next/image'
  */
 export function BrandIntro() {
   return (
-    <section aria-label="ClipFlow" className="mx-auto flex w-full max-w-5xl justify-center px-5 pt-10 md:pt-14">
+    <section aria-label="ClipFlow" className="mx-auto flex w-full max-w-5xl justify-center px-5 pt-6 md:pt-8">
       <div className="group logo-glass relative">
         {/* Glass surface */}
         <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-white/5 p-4 backdrop-blur-md shadow-[0_20px_60px_-24px_oklch(0.5_0.13_160/0.5)] transition-all duration-500 group-hover:border-white/25 group-hover:bg-white/[0.07] sm:p-6">
@@ -32,7 +32,7 @@ export function BrandIntro() {
               width={640}
               height={560}
               priority
-              className="logo-img h-auto w-40 select-none rounded-2xl transition-transform duration-500 group-hover:scale-[1.015] sm:w-52 md:w-64"
+              className="logo-img h-auto w-32 select-none rounded-2xl transition-transform duration-500 group-hover:scale-[1.015] sm:w-40 md:w-48"
             />
 
             {/* Independent breathing glow accents over the three flame heads */}
