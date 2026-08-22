@@ -1,5 +1,8 @@
-// Replace CALENDLY_URL with the agency's own Calendly scheduling link.
-const CALENDLY_URL = 'https://calendly.com/d/cn2-hdw-vkey/30-minute-meeting'
+import { ExternalLink } from 'lucide-react'
+import { SITE_CONFIG } from '@/lib/site-config'
+
+// The Calendly link lives in lib/site-config.ts (SITE_CONFIG.calendlyUrl).
+const CALENDLY_URL = SITE_CONFIG.calendlyUrl
 
 export function Booking() {
   return (
@@ -25,6 +28,19 @@ export function Booking() {
           loading="lazy"
         />
       </div>
+
+      <p className="mt-4 text-center text-sm text-muted-foreground">
+        Scheduler not loading?{' '}
+        <a
+          href={CALENDLY_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 font-medium text-emerald-bright underline-offset-4 hover:underline"
+        >
+          Open the booking page
+          <ExternalLink className="size-3.5" />
+        </a>
+      </p>
     </section>
   )
 }

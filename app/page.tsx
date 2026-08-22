@@ -1,4 +1,5 @@
 import { Booking } from '@/components/booking'
+import { BrandIntro } from '@/components/brand-intro'
 import { CapacityBar } from '@/components/capacity-bar'
 import { CaseStudies } from '@/components/case-studies'
 import { CtaBanner } from '@/components/cta-banner'
