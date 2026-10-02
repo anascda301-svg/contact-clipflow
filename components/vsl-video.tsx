@@ -5,12 +5,9 @@ import { ExternalLink, Play } from 'lucide-react'
 import { SITE_CONFIG } from '@/lib/site-config'
 
 /**
- * VSL / Explainer video, connected to a shared Google Drive file.
- *
- * Configure the video by setting `vslGoogleDriveFileId` in `lib/site-config.ts`.
- * The Drive file must be shared publicly ("Anyone with the link") so visitors
- * can watch without signing into your Google account. No private credentials
- * are used here — only a public embed URL built from the file ID.
+ * VSL / explainer video, connected to the public Reachify Google Drive file.
+ * The embed uses Drive's preview endpoint so visitors can play the video inline
+ * without signing into a Google account.
  */
 export function VslVideo() {
   const videoUrl = SITE_CONFIG.vslUrl
@@ -43,13 +40,13 @@ export function VslVideo() {
                 className="absolute inset-0 h-full w-full"
               />
 
-              {/* Loading state — matches ClipFlow's navy visual language */}
+              {/* Loading state for the Reachify video embed */}
               {!loaded && !errored && (
                 <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-navy-elevated to-navy-deep">
                   <span className="flex size-12 items-center justify-center rounded-full border border-emerald-bright/30">
                     <span className="size-5 animate-spin rounded-full border-2 border-emerald-bright/30 border-t-emerald-bright" />
                   </span>
-                  <p className="text-sm text-muted-foreground">Loading ClipFlow VSL…</p>
+                  <p className="text-sm text-muted-foreground">Loading Reachify VSL…</p>
                 </div>
               )}
 
@@ -70,7 +67,7 @@ export function VslVideo() {
               )}
             </>
           ) : (
-            /* Clean premium placeholder until a real file ID is provided */
+            /* Clean fallback when the video URL is unavailable */
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-navy-elevated to-navy-deep px-6 text-center">
               <span className="flex size-16 items-center justify-center rounded-full bg-primary text-primary-foreground">
                 <Play className="size-6 translate-x-0.5" fill="currentColor" />
