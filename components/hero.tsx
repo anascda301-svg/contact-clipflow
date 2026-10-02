@@ -14,7 +14,7 @@ export function Hero() {
 
       <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
         The creators who dominate their field aren&apos;t louder — they&apos;re{' '}
-        <span className="text-foreground">everywhere</span>. ClipFlow makes you impossible to scroll past,
+        <span className="text-foreground">everywhere</span>. Reachify makes you impossible to scroll past,
         flooding every platform with your content until you own your niche. That&apos;s exactly what our
         content distribution service is built to do.
       </p>
