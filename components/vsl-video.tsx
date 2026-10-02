@@ -13,6 +13,7 @@ export function VslVideo() {
   const videoUrl = SITE_CONFIG.vslUrl
   const [loaded, setLoaded] = useState(false)
   const [errored, setErrored] = useState(false)
+  const [started, setStarted] = useState(false)
 
   return (
     <section id="vsl" className="mx-auto w-full max-w-4xl scroll-mt-24 px-5 py-8">
@@ -37,11 +38,25 @@ export function VslVideo() {
                 allowFullScreen
                 onLoad={() => setLoaded(true)}
                 onError={() => setErrored(true)}
-                className="absolute inset-0 h-full w-full"
+                className={`absolute inset-0 h-full w-full ${started ? 'opacity-100' : 'opacity-0'}`}
               />
 
+              {!started && (
+                <button
+                  type="button"
+                  onClick={() => setStarted(true)}
+                  className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-navy-elevated to-navy-deep text-center transition-colors hover:from-navy hover:to-navy-elevated"
+                  aria-label="Play Reachify VSL"
+                >
+                  <span className="flex size-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-transform hover:scale-105">
+                    <Play className="size-6 translate-x-0.5" fill="currentColor" />
+                  </span>
+                  <span className="text-sm font-medium text-foreground">Watch the Reachify VSL</span>
+                </button>
+              )}
+
               {/* Loading state for the Reachify video embed */}
-              {!loaded && !errored && (
+              {started && !loaded && !errored && (
                 <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-navy-elevated to-navy-deep">
                   <span className="flex size-12 items-center justify-center rounded-full border border-emerald-bright/30">
                     <span className="size-5 animate-spin rounded-full border-2 border-emerald-bright/30 border-t-emerald-bright" />
