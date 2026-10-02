@@ -23,7 +23,7 @@ export function Booking() {
       <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-card glow-emerald">
         <iframe
           title="Book a meeting with ClipFlow"
-          src={`${CALENDLY_URL}?hide_gdpr_banner=1&background_color=1b2942&text_color=ffffff&primary_color=1f7a54`}
+          src={`${CALENDLY_URL}&hide_gdpr_banner=1&background_color=21070d&text_color=ffffff&primary_color=000000`}
           className="h-[720px] w-full"
           loading="lazy"
         />

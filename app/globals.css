@@ -57,15 +57,15 @@
 :root {
   color-scheme: dark;
 
-  /* Brand palette: deep navy, white, dark green */
-  --navy-deep: oklch(0.17 0.045 255);
-  --navy: oklch(0.21 0.05 255);
-  --navy-elevated: oklch(0.26 0.05 255);
-  --emerald: oklch(0.42 0.09 158);
-  --emerald-bright: oklch(0.6 0.13 160);
-  --ink: oklch(0.14 0.04 258);
+  /* Brand palette: deep burgundy, black, white, and Reachify red */
+  --navy-deep: oklch(0.11 0.055 15);
+  --navy: oklch(0.15 0.065 15);
+  --navy-elevated: oklch(0.2 0.075 15);
+  --emerald: oklch(0.12 0.02 15);
+  --emerald-bright: oklch(0.66 0.22 20);
+  --ink: oklch(0.08 0.02 15);
 
-  --background: oklch(0.17 0.045 255);
+  --background: oklch(0.11 0.055 15);
   --foreground: oklch(0.98 0.005 250);
 
   --card: oklch(0.23 0.05 255);

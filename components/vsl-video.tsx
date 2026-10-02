@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { ExternalLink, Play } from 'lucide-react'
-import { SITE_CONFIG, driveEmbedUrl, driveViewUrl } from '@/lib/site-config'
+import { SITE_CONFIG } from '@/lib/site-config'
 
 /**
  * VSL / Explainer video, connected to a shared Google Drive file.
@@ -13,7 +13,7 @@ import { SITE_CONFIG, driveEmbedUrl, driveViewUrl } from '@/lib/site-config'
  * are used here — only a public embed URL built from the file ID.
  */
 export function VslVideo() {
-  const fileId = SITE_CONFIG.vslGoogleDriveFileId
+  const videoUrl = SITE_CONFIG.vslUrl
   const [loaded, setLoaded] = useState(false)
   const [errored, setErrored] = useState(false)
 
@@ -31,11 +31,11 @@ export function VslVideo() {
 
       <div className="relative overflow-hidden rounded-2xl border border-border bg-card glow-emerald">
         <div className="relative aspect-video w-full">
-          {fileId ? (
+          {videoUrl ? (
             <>
               <iframe
-                title="ClipFlow explainer video"
-                src={driveEmbedUrl(fileId)}
+                title="Reachify explainer video"
+                src={videoUrl}
                 allow="autoplay; encrypted-media; fullscreen"
                 allowFullScreen
                 onLoad={() => setLoaded(true)}
@@ -58,12 +58,12 @@ export function VslVideo() {
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-navy-elevated to-navy-deep px-6 text-center">
                   <p className="text-sm text-foreground">The VSL couldn&apos;t be loaded.</p>
                   <a
-                    href={driveViewUrl(fileId)}
+                    href={videoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full border border-emerald-bright/50 bg-emerald/15 px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:border-emerald-bright"
                   >
-                    Open video in Google Drive
+                    Open video
                     <ExternalLink className="size-4" />
                   </a>
                 </div>
@@ -75,10 +75,9 @@ export function VslVideo() {
               <span className="flex size-16 items-center justify-center rounded-full bg-primary text-primary-foreground">
                 <Play className="size-6 translate-x-0.5" fill="currentColor" />
               </span>
-              <p className="text-sm font-medium text-foreground">VSL Video</p>
+                <p className="text-sm font-medium text-foreground">Reachify VSL</p>
               <p className="max-w-sm text-sm text-muted-foreground">
-                Connect your Google Drive video file to display the ClipFlow walkthrough. Once the file ID
-                is provided, the real video loads automatically.
+                Watch the Reachify distribution walkthrough.
               </p>
             </div>
           )}
