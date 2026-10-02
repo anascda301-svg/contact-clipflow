@@ -2,13 +2,13 @@ import { ArrowRight, Play } from 'lucide-react'
 
 export function Hero() {
   return (
-    <section id="top" className="relative mx-auto w-full max-w-5xl px-5 pt-14 pb-20 text-center md:pt-20">
+    <section id="top" className="relative mx-auto w-full max-w-5xl px-5 pt-4 pb-16 text-center md:pt-6">
       {/* Banner placeholder — drop the agency banner behind the hero here (/brand/banner.jpg) */}
       <span className="inline-flex items-center gap-2 rounded-full border border-emerald-bright/40 bg-emerald/15 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-foreground/80">
         Content Distribution Agency
       </span>
 
-      <h1 className="mx-auto mt-7 max-w-4xl text-balance font-display text-4xl font-bold leading-[1.08] tracking-tight md:text-6xl">
+      <h1 className="mx-auto mt-4 max-w-4xl text-balance font-display text-4xl font-bold leading-[1.08] tracking-tight md:text-6xl">
         Are you an entrepreneur stuck at the same reach — and the same monthly ceiling?
       </h1>
 
