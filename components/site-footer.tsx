@@ -26,7 +26,7 @@ export function SiteFooter() {
             <span className="flex size-7 items-center justify-center rounded-md border border-emerald-bright/40 bg-emerald/20 font-display text-xs font-bold text-foreground">
               CF
             </span>
-            <span className="font-display font-semibold text-foreground">ClipFlow</span>
+            <span className="font-display font-semibold text-foreground">Reachify</span>
           </div>
           <p>© {new Date().getFullYear()} ClipFlow. Distribute like the top 1%.</p>
         </div>

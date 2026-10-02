@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const sora = Sora({ subsets: ['latin'], variable: '--font-sora', display: 'swap' })
 
 export const metadata: Metadata = {
-  title: 'ClipFlow — Distribute Like the Top 1%',
+  title: 'Reachify — Distribute Like the Top 1%',
   description:
     'ClipFlow is the MENA-first content distribution agency. We turn your long-form content into hundreds of short videos across TikTok, Instagram, and YouTube Shorts — no ad spend required.',
   generator: 'v0.app',
