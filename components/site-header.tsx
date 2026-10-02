@@ -2,7 +2,7 @@ export function SiteHeader() {
   return (
     <header className="relative z-30 mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5">
       <a href="#top" className="flex items-center gap-2.5" aria-label="Reachify home">
-        {/* Agency logo placeholder — replace /brand/logo.svg with the ClipFlow logo */}
+        {/* Reachify agency logo */}
         <span className="flex size-9 items-center justify-center rounded-lg border border-emerald-bright/40 bg-emerald/20 font-display text-sm font-bold text-foreground">
           CF
         </span>

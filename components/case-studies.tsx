@@ -3,7 +3,7 @@ const CASES = [
   { src: '/case-studies/cs-6.jpeg', caption: 'TikTok — 591K followers · 6.8M likes', tall: true },
   { src: '/case-studies/cs-7.jpeg', caption: 'YouTube — 768K subscribers · millions of views', tall: false },
   { src: '/case-studies/cs-3.jpeg', caption: 'YouTube — 603K subscribers · 26.5M+ views', tall: true },
-  { src: '/case-studies/cs-5.jpeg', caption: 'Instagram profile — powered by ClipFlow', tall: false },
+  { src: '/case-studies/cs-5.jpeg', caption: 'Instagram profile — powered by Reachify', tall: false },
   { src: '/case-studies/cs-1.jpeg', caption: 'YouTube — 13.7K subscribers · 904K+ views', tall: true },
 ]
 

@@ -28,7 +28,7 @@ export function SiteFooter() {
             </span>
             <span className="font-display font-semibold text-foreground">Reachify</span>
           </div>
-          <p>© {new Date().getFullYear()} ClipFlow. Distribute like the top 1%.</p>
+          <p>© {new Date().getFullYear()} Reachify. Distribute like the top 1%.</p>
         </div>
       </div>
     </footer>
